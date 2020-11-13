@@ -1,0 +1,59 @@
+Arguments: 
+  /home/killer/.local/bin/node /home/killer/.local/bin/yarn
+
+PATH: 
+  /opt/flutter/bin:/home/killer/.local/bin:/home/killer/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/terser/-/terser-4.6.11.tgz: ETIMEDOUT
+      at Timeout._onTimeout (/home/killer/.local/lib/node_modules/yarn/lib/cli.js:141408:19)
+      at listOnTimeout (internal/timers.js:549:17)
+      at processTimers (internal/timers.js:492:7)
+
+npm manifest: 
+  {
+      "name": "parcel-boilerplate",
+      "version": "1.0.0",
+      "description": "Starter boilerplate for building vanilla JS apps",
+      "main": "index.js",
+      "scripts": {
+          "dev": "npm run clean && parcel public/index.html --out-dir development -p 3000",
+          "build": "parcel build public/index.html --out-dir dist --public-url ./",
+          "clean": "rimraf ./development && rimraf -rf ./.cache"
+      },
+      "repository": {
+          "type": "git",
+          "url": "git+https://github.com/sayeedafridi/parcel-boilerplate.git"
+      },
+      "keywords": [
+          "parcel"
+      ],
+      "author": "Sayeed Afridi",
+      "license": "MIT",
+      "devDependencies": {
+          "@babel/core": "^7.9.0",
+          "@babel/plugin-transform-runtime": "^7.9.0",
+          "@babel/runtime-corejs2": "^7.9.2",
+          "parcel-bundler": "^1.12.4",
+          "rimraf": "^3.0.2",
+          "sass": "^1.26.3"
+      },
+      "dependencies": {
+          "axios": "^0.19.2"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
