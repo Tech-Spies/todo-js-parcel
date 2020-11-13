@@ -1,11 +1,10 @@
-import User from './components/User';
-import Header from './components/Header';
-import './scss/app.scss';
-
-const app = async () => {
-	document.getElementById('header').innerHTML = Header();
-	document.getElementById('user').innerHTML = await User();
+const App = () => {
+	const template = `
+		<div class='wrapper'>
+			<h1>Hello</h1>
+		</div>
+	`
+	return template
 };
 
-// Load app
-app();
+export default App
