@@ -1,0 +1,27 @@
+@import 'title';
+@import 'input';
+
+
+$primary-color: slateblue;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #eee;
+}
+
+.wrapper {
+	width: 800px;
+	height: 90vh;
+	position: absolute;
+	padding: 100px;
+	top: 50%;
+	left: 50%;
+	background-color: white;
+	transform: translate(-50%, -50%);
+	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
+}
