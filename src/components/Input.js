@@ -1,6 +1,14 @@
-const Input = () => {
+const Input = ({placeholder, type='text', name, icon}) => {
     const template = `
-        <input id='todo' name='todo' type='text' />
+    <div class="input">
+        <input
+            class="input_item"
+            placeholder="${placeholder}"
+            type="${type}"
+            name="${name}"
+        />
+        <div class="input_btn" ><i class="${icon}"></i></div>
+    </div>
     `
 
     return template
